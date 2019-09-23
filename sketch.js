@@ -1,7 +1,7 @@
 const points = [];
 const hull = [];
 
-let maxPts = 60;
+let maxPts = 30;
 let pad = 70;
 let leftmost;
 
@@ -33,6 +33,7 @@ function setup(){
 
 function draw(){
     background(0);
+    strokeWeight(8);
     for(pt of points){
         point(pt.x, pt.y);
     }
@@ -75,6 +76,7 @@ function draw(){
 
 function finish(){
     background(0);
+    strokeWeight(8);
     for(pt of points){
         point(pt.x, pt.y);
     }
